@@ -1,0 +1,30 @@
+<ng-container>
+  <p-button label="查詢" (onClick)="getAllStudents()"></p-button>
+  <p-button label="新增" (onClick)="changeMode('c02')"></p-button>
+  <p-table [value]="studentInfoDetail" responsiveLayout="scroll">
+    <ng-template pTemplate="header">
+      <tr>
+        <th>學生代號</th>
+        <th>學生姓名</th>
+        <th>學生性別</th>
+        <th>學生電話</th>
+        <th>學生地址</th>
+        <th>動作</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-student>
+      <tr>
+        <td>{{student.id}}</td>
+        <td>{{student.name}}</td>
+        <td>{{student.sex}}</td>
+        <td>{{student.phone}}</td>
+        <td>{{student.address}}</td>
+        <td>
+          <p-button label="編輯" (onClick)="changeMode('c03',student)"></p-button>
+          &nbsp;&nbsp;
+          <p-button label="刪除" (onClick)="doDelete(student)"></p-button>
+        </td>
+      </tr>
+    </ng-template>
+  </p-table>
+</ng-container>

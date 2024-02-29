@@ -1,0 +1,69 @@
+<div class="container">
+  <div class="row">
+    <div class="col-4 lefCol">
+      <div class="d-flex justify-content-center align-items-center flex-column h-100">
+        <div class=" title">
+          Welcome to Cram-School System
+        </div>
+        <div>
+          <p-button label="註冊" styleClass="p-button-primary" (onClick)="doLogin()"></p-button>
+        </div>
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="d-flex justify-content-center flex-column h-100">
+        <div>Sign in to Cram-School System</div>
+        <div [formGroup]="loginForm">
+          <div class="p-inputgroup col-8">
+            <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+            <input class="form-control" type="text" id="name" formControlName="name" pInputText placeholder="請輸入帳號">
+          </div>
+          <div class="p-inputgroup col-8">
+            <span class="p-inputgroup-addon"><i class="pi pi-lock"></i></span>
+            <input class="form-control" type="password" id="password" formControlName="password" pInputText placeholder="請輸入密碼">
+          </div>
+          <p-button label="登入" styleClass="p-button-primary" (onClick)="doLogin()"></p-button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <h1>Sign In</h1>
+<div [formGroup]="loginForm">
+  <div class="row mb-3">
+    <label class="col-sm-2 col-form-label text-end">帳號：</label>
+    <div class="col-sm-5">
+      <input class="form-control" type="text" id="name" formControlName="name">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label class="col-sm-2 col-form-label text-end ">密碼：</label>
+    <div class="col-sm-5">
+      <input class="form-control" type="text" id="password" formControlName="password">
+    </div>
+  </div>
+
+  <div class="d-grid gap-2 mb-3 d-md-flex justify-content-md-center">
+    <p-button label="登入" styleClass="p-button-primary" (onClick)="doLogin()"></p-button>
+
+  </div>
+</div> -->
+
+
+<!-- <div>
+  <div id="container1">
+    <div>
+      <h3>登入 Login</h3>
+      <form [formGroup]="loginForm">
+        <input class="form-control" type="text" id="name" placeholder="帳號" formControlName="name">
+        <div class="tab"></div>
+        <input class="form-control" type="text" id="password" placeholder="密碼" formControlName="password">
+        <div class="tab"></div>
+        <p-button label="登入" styleClass="p-button-primary" (onClick)="doLogin()"></p-button>
+      </form>
+
+      <p-button label="註冊帳號" styleClass="p-button-primary"></p-button>
+
+    </div>
+  </div>
+</div> -->

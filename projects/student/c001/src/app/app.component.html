@@ -1,0 +1,11 @@
+<ng-container [ngSwitch]="functionMode">
+  <ng-container>
+    <app-c01 *ngSwitchCase="'c01'" (mode)="modeChange($event)" (selectData)="selectData($event)"></app-c01>
+  </ng-container>
+  <ng-container>
+    <app-c02 *ngSwitchCase="'c02'" (mode)="modeChange($event)"></app-c02>
+  </ng-container>
+  <ng-container>
+    <app-c03 *ngSwitchCase="'c03'" (mode)="modeChange($event)" [studentInfoDetailData]="studentInfoDetailData"></app-c03>
+  </ng-container>
+</ng-container>

@@ -1,0 +1,40 @@
+<h1>新增學生資料</h1>
+<div [formGroup]="createStudentForm">
+  <div class="row mb-3">
+    <label class="col-sm-2 col-form-label text-end">學生編號：</label>
+    <div class="col-sm-5">
+      <input class="form-control" type="text" id="id" formControlName="id">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label class="col-sm-2 col-form-label text-end ">姓名：</label>
+    <div class="col-sm-5">
+      <input class="form-control" type="text" id="name" formControlName="name">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label class="col-sm-2 col-form-label text-end ">性別：</label>
+    <div class="col-sm-5">
+      <input class="form-control" type="text" id="sex" formControlName="sex">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label class="col-sm-2 col-form-label text-end ">電話：</label>
+    <div class="col-sm-5">
+      <input class="form-control" type="text" id="phone" formControlName="phone">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label class="col-sm-2 col-form-label text-end ">地址：</label>
+    <div class="col-sm-5">
+      <input class="form-control" type="text" id="address" formControlName="address">
+    </div>
+  </div>
+  <div class="d-grid gap-2 mb-3 d-md-flex justify-content-md-center">
+    <!-- <button pButton class="btn btn-primary" (click)="saveStudent()">儲存</button> -->
+    <!-- <button pButton class="btn btn-danger" (click)="doCancel()">取消</button> -->
+    <p-button label="儲存" styleClass="p-button-primary" (onClick)="doSaveStudent()"></p-button>
+    <p-button label="取消" styleClass="p-button-danger" (onClick)="doCancel()"></p-button>
+    <!-- <a class="btn btn-danger" role="button" (onclick)="doCancel()">取消</a> -->
+  </div>
+</div>

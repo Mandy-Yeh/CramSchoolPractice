@@ -1,0 +1,9 @@
+.lefCol{
+  background-color: #BCB8B1;
+  /* background-image: url('../../assets/images/login.jpeg'); */
+  height: 100vh;
+}
+.title{
+  font-weight: bolder;
+}
+
