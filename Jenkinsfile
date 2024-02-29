@@ -1,7 +1,7 @@
 pipeline {
     agent any
 
-    tools{
+    tools {
       nodejs "NodeJS 16.14.0"
     }
 
