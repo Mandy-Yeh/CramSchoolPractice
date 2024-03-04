@@ -15,6 +15,7 @@ pipeline {
                 sh 'npm run-script build:platform'
                 sh 'npm run-script build:c001:deploy'
                 sh 'ng serve'
+                sh 'npm start'
             }
         }
     }
