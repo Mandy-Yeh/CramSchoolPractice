@@ -14,6 +14,7 @@ pipeline {
                 sh 'npm run-script build:c001:deploy'
                 sh 'npm -g install @angular/cli@13.3.11'
                 sh 'ng --version'
+                sh 'ng serve'
             }
         }
     }
